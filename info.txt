@@ -1,0 +1,49 @@
+
+------ CARDS --------
+
+STACK
+push: add to end (last)
+pop:  remove from same end (last)
+*peek: get value of next pop
+*count: get length
+
+--> sigs from Turing's grand-students
+--> pic, natch
+
+:: linked list: O(1) 
+:: array: O(1), but fixed size [--you can only have one at a time], mutation?
+:: dynamic array: O(1), amortized, (mutation?)
+
+
+QUEUE
+enqueue: add to end (last)
+dequeue: remove from opposite end (first)
+*peek:   get value of next dequeue
+*count:  get length
+
+--> history
+--> pic
+
+:: doubly linked list: O(1), mutation
+:: linked list w/ tail pointer (add to tail): mutation
+:: array: O(1) if you treat it like a ring buffer, mutation, fixed size
+:: dynamic array: amortized O(1), mutation
+:: two stacks -> one queue: O(1), amortized, [persistent with more work], [non-amortized with more work]
+    -> Tarjan: persistent
+    -> Okasaki: amortized
+
+
+DEQUE
+push: add to end (last)
+pop:  remove from end (last)
+shift: add to front (first)
+unshift: remove from front (first)
+peek-last: get value of end
+peek-first: get value of front
+
+--> history
+--> pic
+
+:: doubly linked list: O(1), mutation
+:: array: O(1) if you treat it like a ring buffer, mutation, fixed size
+:: persistent is *tricky*, catenable [], confluently persistent [mergable, like github, makes a DAG], else ephemeral. partially persistent is read-only. 
