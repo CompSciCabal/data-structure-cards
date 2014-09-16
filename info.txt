@@ -9,6 +9,8 @@ basic operations are under the name.
 optional operations start with a star.
 
 
+------------------------
+
 STACK
 
 push: add to end
@@ -25,6 +27,8 @@ implementations:
 --> historical note: Turing was the first one to refer to a stack, called operations 'bury' and 'unberry'
 --> sigs from Turing's grand-students
 
+
+------------------------
 
 QUEUE
 
@@ -45,11 +49,12 @@ implementations:
 
 --> history?
 
+--------------------
 
 DEQUE
 
 push: add to end
-pop:  remove from end
+pop: remove from end
 shift: add to front
 unshift: remove from front
 peek-last: get value of end
@@ -60,10 +65,11 @@ peek-first: get value of front
 implementations:
 :: doubly linked list: O(1), mutation
 :: array: O(1) if you treat it like a ring buffer, mutation, fixed size
-:: persistent is *tricky*, catenable [], confluently persistent [mergable, like github, makes a DAG], else ephemeral. partially persistent is read-only. 
+:: fully persistent is *tricky*, catenable [], confluently persistent [mergable, like github, makes a DAG], else ephemeral. partially persistent is read-only. 
 
 --> history?
 
+------------------------
 
 
 CONCRETE
@@ -73,17 +79,63 @@ The operations under the data structure name follow this structure:
 SPEED name: description
 Then maybe some extra properties if it has any
 
+------------------------
+
 LINKED LIST
 
 FAST push: add to end
-FAST  pop: remove from end
+FAST pop: remove from end
 
-DIRE   shift: add to front
+DIRE shift: add to front
 DIRE unshift: remove from front
 
-SLOW  peek-last: get value of end
+SLOW peek-last: get value of end
 SLOW peek-first: get value of front
 SLOW count: get length
 
-*fully persistent 
+* fully persistent 
+
+------------------------
+
+DOUBLY-LINKED LIST
+
+FAST push: add to end
+FAST pop: remove from end
+
+FAST shift: add to front
+FAST unshift: remove from front
+
+FAST peek-last: get value of end
+FAST peek-first: get value of front
+FAST count: get length
+
+* ephemeral, mutates
+
+------------------------
+
+BATCHED QUEUE
+
+FAST push: add to end
+FAST pop: remove from end
+
+FAST shift: add to front
+FAST unshift: remove from front
+
+FAST peek-last: get value of end
+FAST peek-first: get value of front
+SLOW count: get length
+
+* amortized, persistent(ish)
+
+- image: one stack upright, another next to it but upside down.
+
+- aside: you can do anything with just two stacks -- it's turing equivalent. 
+
+------------------------
+
+HAMTs
+
+Ctries
+
+RRB-trees
 
