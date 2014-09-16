@@ -1,49 +1,89 @@
 
 ------ CARDS --------
 
+
+ABSTRACT
+========
+
+basic operations are under the name. 
+optional operations start with a star.
+
+
 STACK
-push: add to end (last)
-pop:  remove from same end (last)
+
+push: add to end
+pop:  remove from end
+
 *peek: get value of next pop
 *count: get length
 
---> sigs from Turing's grand-students
---> pic, natch
-
+implementations:
 :: linked list: O(1) 
-:: array: O(1), but fixed size [--you can only have one at a time], mutation?
+:: array: O(1), but fixed size [you can only have one at a time], mutation?
 :: dynamic array: O(1), amortized, (mutation?)
+
+--> historical note: Turing was the first one to refer to a stack, called operations 'bury' and 'unberry'
+--> sigs from Turing's grand-students
 
 
 QUEUE
-enqueue: add to end (last)
-dequeue: remove from opposite end (first)
+
+enqueue: add to end
+dequeue: remove from other end
+
 *peek:   get value of next dequeue
 *count:  get length
 
---> history
---> pic
-
+implementations:
 :: doubly linked list: O(1), mutation
 :: linked list w/ tail pointer (add to tail): mutation
 :: array: O(1) if you treat it like a ring buffer, mutation, fixed size
 :: dynamic array: amortized O(1), mutation
-:: two stacks -> one queue: O(1), amortized, [persistent with more work], [non-amortized with more work]
+:: banker's queue: O(1), amortized, [persistent with more work], [non-amortized with more work]
     -> Tarjan: persistent
     -> Okasaki: amortized
 
+--> history?
+
 
 DEQUE
-push: add to end (last)
-pop:  remove from end (last)
-shift: add to front (first)
-unshift: remove from front (first)
+
+push: add to end
+pop:  remove from end
+shift: add to front
+unshift: remove from front
 peek-last: get value of end
 peek-first: get value of front
 
---> history
---> pic
+*count:  get length
 
+implementations:
 :: doubly linked list: O(1), mutation
 :: array: O(1) if you treat it like a ring buffer, mutation, fixed size
 :: persistent is *tricky*, catenable [], confluently persistent [mergable, like github, makes a DAG], else ephemeral. partially persistent is read-only. 
+
+--> history?
+
+
+
+CONCRETE
+========
+
+The operations under the data structure name follow this structure:
+SPEED name: description
+Then maybe some extra properties if it has any
+
+LINKED LIST
+
+FAST push: add to end
+FAST  pop: remove from end
+
+DIRE   shift: add to front
+DIRE unshift: remove from front
+
+SLOW  peek-last: get value of end
+SLOW peek-first: get value of front
+SLOW count: get length
+
+*fully persistent 
+
