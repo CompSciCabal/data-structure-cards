@@ -125,7 +125,7 @@ FAST peek-last: get value of end
 FAST peek-first: get value of front
 SLOW count: get length
 
-* amortized, persistent(ish)
+* amortized, persistent
 
 - image: one stack upright, another next to it but upside down.
 
@@ -133,9 +133,9 @@ SLOW count: get length
 
 ------------------------
 
-HAMTs
+HAMT
 
-Ctries
+Ctrie
 
-RRB-trees
+RRB-tree
 
