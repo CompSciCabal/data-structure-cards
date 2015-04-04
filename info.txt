@@ -1,4 +1,24 @@
 
+Four different levels of design:
+- simple consistent card back
+- accurate image for each DS (design language for representing structural aspects)
+- overall layout for the card information (plus mod knobs for expansion decks)
+- fancy image for each DS (should to be able to commission these widely)
+
+Art for data structure cards:
+1. Back of card
+  - separate for Abstract and Concrete
+2. Datastructure representation pictures
+  - One possible sub-project is a visual language for data structure definition/specification
+3. Individual card art
+  - Fanciful representations of the data structures
+4. Card layout
+  - Layout of specific cards
+  - Probably separate for abstract and concrete
+  - Incorporates the representation with some detailed information about a particular structure
+
+
+
 ------ CARDS --------
 
 
@@ -139,3 +159,48 @@ Ctrie
 
 RRB-tree
 
+
+
+
+lalalal
+===================================
+
+A list of all the concrete data structures. Possibly some general notes on them too, but note that the card details section contains notes pertaining specifically to concrete data structure cards as well. Note also that each card should have its own page, and this will just link to all of them.
+
+LINKED LIST
+
+FAST push: add to end FAST pop: remove from end
+
+DIRE shift: add to front DIRE unshift: remove from front
+
+SLOW peek-last: get value of end SLOW peek-first: get value of front SLOW count: get length
+
+fully persistent
+
+
+
+DOUBLY-LINKED LIST
+
+FAST push: add to end FAST pop: remove from end
+
+FAST shift: add to front FAST unshift: remove from front
+
+FAST peek-last: get value of end FAST peek-first: get value of front FAST count: get length
+
+ephemeral, mutates
+
+
+
+BATCHED QUEUE
+
+FAST push: add to end FAST pop: remove from end
+
+FAST shift: add to front FAST unshift: remove from front
+
+FAST peek-last: get value of end FAST peek-first: get value of front SLOW count: get length
+
+amortized, persistent(ish)
+
+image: one stack upright, another next to it but upside down.
+
+aside: you can do anything with just two stacks -- it's turing equivalent.
