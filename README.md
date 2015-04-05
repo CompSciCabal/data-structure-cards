@@ -1,15 +1,23 @@
 Data Structure Cards
 ====================
 
-A card-based approach to learning about data structures. Think baseball, but more tree-shaped.
+A data-structure-based approach cards. 
 
-Want to contribute? Pick a card, any card, and submit a pull request that fleshes out its information. Or add a brand new data structure! (If you don't know where it should go drop it into cardsets/sortme.)
+We'd like these cards to:
+- serve as stand alone trading cards
+- come with rules for playing games
+- act like "flash cards" for learning
+- be quick reference cards for picking a data structure
+- have extra historical information, like who first discovered them
 
-----------
+###Want to contribute? 
 
-Notes:
+This project is just at the beginning, and we need your help to make it happen! We welcome pull requests containing new data structures, or new details for existing cards.
 
-Please stick to the abstract and concrete templates while creating new cards -- we need uniformity among all cards for the system to work.
+If you don't know where to put a new data structure please add it to cardsets/sortme. Also, please stick to the abstract and concrete templates while creating new cards -- we need uniformity among all cards for the system to work.
 
 Likewise, when adding information to existing cards please take care to keep the template intact, or impose it upon the card if it isn't already. Be bold! (But also be careful.)
+
+If you'd like to contribute art or a ruleset please file and issue or contact @dxnn directly so we can discuss.
+
 
