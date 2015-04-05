@@ -24,3 +24,21 @@ ABSTRACT
 
 Above possibly notated by a list of all possible operations, with one edge-printed color for required and another for optional, and all other operations listed but greyed out and neutrally labeled. Time expectation might turn out to always be consistent per-operation, rather than per-card, in which case it could be denoted elsewhere -- for example, an info sheet providing an explanation of the operations.
 
+Color gradient for ops side and feature side: pastels vs saturated colors? rainbow or something more interesting (a different walk across the gamut space)?
+
+
+----------
+
+
+
+
+In a perfect world the cards would:
+- be stand alone trading cards
+- be "flash cards" for learning
+- be quick reference cards for picking a data structure
+- come with rules for playing games
+- have extra historical information, like who first discovered them
+- act as signing sheets which discoverers could then apply their autographs to to "power it up"
+
+
+
