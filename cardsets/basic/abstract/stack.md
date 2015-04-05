@@ -1,27 +1,25 @@
-STACK
+Name of Structure
+=================
 
-push: add to end pop: remove from end
+## Operations [bold required operations; italicize optional ones]
+- *push-fast*
+- *pop-fast*
+- _peek-fast_
+- push-slow
+- pop-slow
+- peek-slow
+- _length_
+- lookup (nth element or by key)
+- insert (in middle or by key)
+- update (in middle or by key)
+- memberof
+- slice
+- max element (or min)
+- nth greatest element
+- merge
 
-*peek: get value of next pop *count: get length
+## Historical tidbit
+Turing was the first one to refer to a stack. He originally called the operations 'bury' and 'unbury'. There's a persistent rumor the name originally came from observing pushdown stacks of cafeteria plates.
 
-implementations: :: linked list: O(1) :: array: O(1), but fixed size [you can only have one at a time], mutation? :: dynamic array: O(1), amortized, (mutation?)
-
---> historical note: Turing was the first one to refer to a stack, called operations 'bury' and 'unberry' --> sigs from Turing's grand-students
-
-
-
-STACK
-
-push: add to end
-pop:  remove from end
-
-*peek: get value of next pop
-*count: get length
-
-implementations:
-:: linked list: O(1) 
-:: array: O(1), but fixed size [you can only have one at a time], mutation?
-:: dynamic array: O(1), amortized, (mutation?)
-
---> historical note: Turing was the first one to refer to a stack, called operations 'bury' and 'unberry'
---> sigs from Turing's grand-students
+## Signatories
+Turing's grand-students
