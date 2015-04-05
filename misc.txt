@@ -1,0 +1,26 @@
+
+Four different levels of design:
+- simple consistent card back
+- accurate image for each DS (design language for representing structural aspects)
+- overall layout for the card information (plus mod knobs for expansion decks)
+- fancy image for each DS (should to be able to commission these widely)
+
+Art for data structure cards:
+1. Back of card
+  - separate for Abstract and Concrete
+2. Datastructure representation pictures
+  - One possible sub-project is a visual language for data structure definition/specification
+3. Individual card art
+  - Fanciful representations of the data structures
+4. Card layout
+  - Layout of specific cards
+  - Probably separate for abstract and concrete
+  - Incorporates the representation with some detailed information about a particular structure
+
+
+
+ABSTRACT
+========
+
+Above possibly notated by a list of all possible operations, with one edge-printed color for required and another for optional, and all other operations listed but greyed out and neutrally labeled. Time expectation might turn out to always be consistent per-operation, rather than per-card, in which case it could be denoted elsewhere -- for example, an info sheet providing an explanation of the operations.
+
