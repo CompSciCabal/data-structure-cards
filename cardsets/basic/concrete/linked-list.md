@@ -15,10 +15,10 @@ Linked List (Persistent)
 ## Operation list / performance characteristics 
 - push-fast: FAST O(1)
 - pop-fast: FAST O(1)
-- peek-first: FAST O(1)
+- peek-fast: FAST O(1)
 - push-slow: DIRE
 - pop-slow: DIRE
-- peek-last: SLOW O(n) time
+- peek-slow: SLOW O(n) time
 - length: SLOW O(n)
 - lookup (nth element or by key): SLOW O(n)
 - insert (in middle or by key): DIRE
