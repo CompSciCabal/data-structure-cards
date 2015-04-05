@@ -15,10 +15,10 @@ Name of Structure
 ## Operation list / performance characteristics
 - push-fast: 
 - pop-fast: 
-- peek-first: 
+- peek-fast: 
 - push-slow: 
 - pop-slow: 
-- peek-last: 
+- peek-slow: 
 - length: 
 - lookup (nth element or by key): 
 - insert (in middle or by key): 
