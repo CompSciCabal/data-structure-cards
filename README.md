@@ -18,6 +18,6 @@ If you don't know where to put a new data structure please add it to cardsets/so
 
 Likewise, when adding information to existing cards please take care to keep the template intact, or impose it upon the card if it isn't already. Be bold! (But also be careful.)
 
-If you'd like to contribute art or a ruleset please file and issue or contact @dxnn directly so we can discuss.
+If you'd like to contribute art or a ruleset please file an issue (or PM dxnn) so we can discuss.
 
-
+THIS IS VERY EXCITING!!! :+1: :hamburger: :+1:
